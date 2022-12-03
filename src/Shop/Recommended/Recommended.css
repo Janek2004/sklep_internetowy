@@ -16,7 +16,7 @@
     cursor: pointer;
     position: absolute;
     background-color: #fff;
-    min-height: 400px;
+    height: 420px;
 }
 
 .Recommended-item-img {
@@ -35,6 +35,14 @@
     transition: .25s;
 }
 
+.Recommended-item-price {
+    position: absolute;
+    right: 18px;
+    top: 12px;
+    opacity: 0;
+    transition: .25s;
+}
+
 .Recommended-item:hover>.Recommended-item-click {
     letter-spacing: 1px;
 }
@@ -45,6 +53,14 @@
 
 input[type='radio'] {
     display: none;
+}
+
+#r-c-item-1:checked~.Recommended #item-1 .Recommended-item-price,
+#r-c-item-2:checked~.Recommended #item-2 .Recommended-item-price,
+#r-c-item-3:checked~.Recommended #item-3 .Recommended-item-price,
+#r-c-item-4:checked~.Recommended #item-4 .Recommended-item-price,
+#r-c-item-5:checked~.Recommended #item-5 .Recommended-item-price {
+    opacity: 1;
 }
 
 #click-1,
