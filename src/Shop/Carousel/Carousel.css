@@ -1,0 +1,78 @@
+.app-carousel {
+    height: 80vh;
+    width: 100%;
+    position: relative;
+}
+
+.app-carousel-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: .5s;
+}
+
+.app-carousel-item[app-active='true'] {
+    opacity: 1;
+}
+
+.app-carousel-navigator {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(0, 0, 0, .25) 0%, rgba(0, 0, 0, .25) 25%, rgba(0, 0, 0, 0) 100%);
+    z-index: 10;
+    cursor: pointer;
+}
+
+.app-carousel-next {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    width: 2rem;
+    height: 2rem;
+}
+.app-carousel-prev {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    transform: rotate(180deg);
+    width: 2rem;
+    height: 2rem;
+}
+
+.app-carousel-navigator[ app-direction='right'] {
+    right: 0;
+    background: linear-gradient(-90deg, rgba(0, 0, 0, .25) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.item-1 {
+    background-image: url(https://sneakersjoint.com/wp-content/uploads/2022/11/yeezy-bred-baner.jpg);
+    background-size: cover;
+}
+
+.item-2 {
+    background-image: url(https://sneakersjoint.com/wp-content/uploads/2022/11/aj1-taxi-baner-scaled.jpg);
+    background-size: cover;
+}
+
+.item-3 {
+    background-image: url(https://sneakersjoint.com/wp-content/uploads/2022/11/panda-baner.jpg);
+    background-size: cover;
+}
+
+.item-4 {
+    background-image: url(https://grailpoint.com/wp-content/uploads/2022/10/grailpoint_-warszawa-1.webp);
+    background-size: cover;
+}
+
+@keyframes carouselItem8s {
+    0% {
+        right: -15px;
+    }
+
+    100% {
+        right: 15px;
+    }
+}

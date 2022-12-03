@@ -1,0 +1,79 @@
+.appbar-bg {
+    background-color: #fff !important;
+}
+
+.nav-underline {
+    color: #000;
+}
+
+.nav-underline::after {
+    content: '';
+    width: 50%;
+    align-self: center;
+    margin-left: 0.5rem;
+    height: 2px;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transition: 0.25s;
+}
+
+.nav-underline:hover::after {
+    width: 92%;
+}
+
+.search-input {
+    box-shadow: none !important;
+    border: none;
+    pointer-events: auto;
+}
+.search-input::selection {
+    background-color: var(--bs-gray-300);
+}
+
+.search {
+    position: relative;
+    pointer-events: none;
+}
+
+.search::after {
+    content: '';
+    width: 50%;
+    align-self: center;
+    margin-left: 0.5rem;
+    height: 2px;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transition: 0.25s;
+}
+
+.search:hover::after,
+.search:focus-within::after {
+    width: 92%;
+}
+
+.search-btn {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+}
+
+.search-img {
+    transition: .25s;
+}
+
+.search-btn:hover>.search-img {
+    transform: rotate(90deg);
+}
+
+#user-dropdown {
+    color: #000;
+}

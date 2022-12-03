@@ -1,0 +1,57 @@
+html,
+body {
+  margin: 0;
+}
+
+.Welcome {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.WelcomeOption {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(0, 104, 116);
+  transition: 0.5s;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  position: relative;
+}
+
+.WelcomeOption-variant {
+  background-color: rgb(151, 240, 255);
+  color: rgb(0, 31, 36);
+}
+
+.WelcomeOption:hover {
+  width: 90%;
+}
+
+.WelcomeOption:active {
+  width: 100%;
+}
+
+.WelcomeOption:hover>.WelcomeTitle {
+  font-size: calc(1.5vw + 4rem);
+}
+
+.WelcomeTitle {
+  font-size: calc(1.5vw + 3rem);
+  user-select: none;
+  transition: .5s;
+  /*text-shadow: .25rem .5rem 1rem rgb(0, 0, 0);*/
+}
+
+.WelcomeSubtitle {
+  opacity: 0;
+  transition: .5s;
+}
+
+.WelcomeOption:hover>.WelcomeSubtitle {
+  opacity: 1;
+}
