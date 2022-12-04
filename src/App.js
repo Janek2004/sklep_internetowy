@@ -12,7 +12,9 @@ const Root = () => <Outlet />
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<Shop />} />
+    <Route path='/' element={<Root />}>
+      <Route path="online-shoes-shop" element={<Shop />} />
+    </Route>
   )
 );
 

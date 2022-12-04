@@ -10,7 +10,7 @@ const AppbarSearch = () => {
                 <Form.Control className="search-input" type='text' placeholder="Wyszukaj" aria-describedby="basic-addon2" />
             </div>
             <Button variant="" id="button-addon2" className="search-btn">
-                <img src={search} className='search-img' />
+                <img src='./static/media/search.d25cce2a58de2c524ca94a3a853c6239.svg' className='search-img' />
             </Button>
         </InputGroup>
     )
